@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nikeelugunda.com/sitemap.xml
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
