@@ -984,8 +984,26 @@ function App() {
             <span className="tag">Instagram Creator</span>
           </div>
 
-          
+          <div className="speaker-card">
+            <div className="speaker-img">
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/images.jpg" alt="Speaker" />
+            </div>
+            <h3>Gampa Nageshwar Rao</h3>
+            <p className="designation">Founder, Impact International</p>
+            <span className="tag">Motivational Speaker</span>
+          </div>
 
+          <div className="speaker-card">
+            <div className="speaker-img">
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/channels4_profile-1.jpg" alt="Speaker" />
+            </div>
+            <h3>Anil Geela</h3>
+            <p className="designation">My Village Show</p>
+            <span className="tag">Actor</span>
+          </div>
+
+{/*           
+#000 */}
       </div>
       </section>
 
