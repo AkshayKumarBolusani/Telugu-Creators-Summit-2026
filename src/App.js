@@ -3,7 +3,7 @@ import './App.css';
 
 const ENABLE_LAUNCH_COUNTDOWN = false;
 const COUNTER_TARGETS = [8, 300, 24, 1];
-const HERO_LOGO_URL = "https://telugucreatorssummit.com/wp-content/uploads/2026/05/Logo-Telugu-scaled.png";
+const HERO_LOGO_URL = "https://nikeelugunda.com/wp-content/uploads/2026/05/Logo-Telugu-scaled.png";
 const SPEAKER_FORM_URL = "https://forms.gle/MJ7JG4VJeYkf9biR7";
 const AWARDEE_FORM_URL = "https://forms.gle/wKiSs2YWarGsQJZv6";
 
@@ -987,7 +987,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/BNS-Srinivas-scaled.png" alt="BNS Srinivas, founder of Telugu SUPER Humans" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/BNS-Srinivas-scaled.png" alt="BNS Srinivas, founder of Telugu SUPER Humans" loading="lazy" />
             </div>
             <h3>BNS Srinivas</h3>
             <p className="designation">Founder, Telugu SUPER Humans</p>
@@ -996,7 +996,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/images.jpg" alt="Gampa Nageshwar Rao, motivational speaker and founder of Impact International" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/images.jpg" alt="Gampa Nageshwar Rao, motivational speaker and founder of Impact International" loading="lazy" />
             </div>
             <h3>Gampa Nageshwar Rao</h3>
             <p className="designation">Founder, Impact International</p>
@@ -1005,7 +1005,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/sravya.jpg" alt="Dr. Sravya Buggana, senior gynecologist and Instagram creator" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/sravya.jpg" alt="Dr. Sravya Buggana, senior gynecologist and Instagram creator" loading="lazy" />
             </div>
             <h3>Dr. Sravya Buggana</h3>
             <p className="designation">Senior Gynecologist & Obstetrician</p>
@@ -1014,7 +1014,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/images-1.jpg" alt="PVS Swetha, dubbing artiste and Instagram creator" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/images-1.jpg" alt="PVS Swetha, dubbing artiste and Instagram creator" loading="lazy" />
             </div>
             <h3>PVS Swetha</h3>
             <p className="designation">Dubbing Artiste</p>
@@ -1025,7 +1025,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-1.jpg" alt="Anil Geela from My Village Show" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/channels4_profile-1.jpg" alt="Anil Geela from My Village Show" loading="lazy" />
             </div>
             <h3>Anil Geela</h3>
             <p className="designation">My Village Show</p>
@@ -1034,7 +1034,7 @@ function App() {
           
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-2.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/channels4_profile-2.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
             </div>
             <h3>Sailaja</h3>
             <p className="designation">Sailaws Kitchen</p>
@@ -1044,7 +1044,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-3.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/channels4_profile-3.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
             </div>
             <h3>Deepak</h3>
             <p className="designation">TechBoyDeepak</p>
@@ -1053,7 +1053,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/vamsi.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+              <img src="htthttps://nikeelugunda.com/wp-content/uploads/2026/05/vamsi.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
             </div>
             <h3>Vamsee Krishna Reddy</h3>
             <p className="designation">Instagram Creator</p>
