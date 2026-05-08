@@ -3,7 +3,9 @@ import './App.css';
 
 const ENABLE_LAUNCH_COUNTDOWN = false;
 const COUNTER_TARGETS = [8, 300, 24, 1];
-const HERO_LOGO_URL = "https://nikeelugunda.com/wp-content/uploads/2026/05/Logo-Telugu-scaled.png";
+const HERO_LOGO_URL = "https://telugucreatorssummit.com/wp-content/uploads/2026/05/Logo-Telugu-scaled.png";
+const SPEAKER_FORM_URL = "https://forms.gle/MJ7JG4VJeYkf9biR7";
+const AWARDEE_FORM_URL = "https://forms.gle/wKiSs2YWarGsQJZv6";
 
 /** 10 May 2026, 9:00 AM IST (fixed instant for all visitors) */
 const HERO_EVENT_START = new Date("2026-05-10T03:30:00.000Z");
@@ -331,6 +333,7 @@ function App() {
     .hero-logo-wrap { position: relative; width: min(86vw, 700px); margin: 0 auto; padding: clamp(10px, 1.6vw, 16px); border-radius: 30px; background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.01)); border: 1px solid rgba(255,215,0,0.2); box-shadow: 0 20px 65px rgba(0,0,0,0.6), 0 0 45px rgba(255,215,0,0.1); backdrop-filter: blur(4px); display: grid; place-items: center; }
     .hero-logo-wrap::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(130deg, transparent 30%, rgba(255,255,255,0.14), transparent 60%); transform: translateX(-130%); animation: heroShine 6.8s linear infinite; }
     .hero-logo { width: 100%; max-width: 620px; max-height: 38vh; height: auto; display: block; margin: 0 auto; position: relative; z-index: 1; object-fit: contain; animation: heroLogoIn 1.1s ease, heroPulse 4.5s ease-in-out infinite; }
+    .hero-title { margin: 0; font-size: clamp(30px, 5vw, 58px); line-height: 1.08; font-weight: 900; letter-spacing: -0.5px; background: linear-gradient(90deg, #b8860b, #ffd700, #fff4b0, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 35px rgba(255,215,0,0.16); }
     .hero-subtext { color: #d2d2d2; font-size: clamp(14px, 2vw, 18px); letter-spacing: 0.3px; text-shadow: 0 0 20px rgba(255,215,0,0.1); }
     .hero-countdown { margin-top: 10px; width: 100%; max-width: 560px; }
     .hero-countdown-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,215,0,0.8); margin-bottom: 12px; }
@@ -340,6 +343,9 @@ function App() {
     .hero-countdown-unit { font-size: 10px; color: #9a9a9a; text-transform: lowercase; letter-spacing: 0.5px; margin-top: 6px; }
     .hero-speaker-btn { display: inline-block; margin-top: 6px; padding: 12px 30px; border-radius: 999px; font-size: 14px; font-weight: 800; letter-spacing: 0.5px; text-decoration: none !important; color: #000; background: linear-gradient(90deg, #b8860b, #ffd700, #fff4b0); box-shadow: 0 10px 28px rgba(255,215,0,0.35), 0 0 30px rgba(212,175,55,0.2); transition: transform 0.25s ease, box-shadow 0.25s ease; }
     .hero-speaker-btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 14px 38px rgba(255,215,0,0.45), 0 0 42px rgba(212,175,55,0.3); }
+    .hero-secondary-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 2px; }
+    .hero-secondary-btn { display: inline-block; min-width: 190px; padding: 11px 22px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: 0.3px; text-decoration: none !important; color: #ffd700; background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.42); box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease; }
+    .hero-secondary-btn:hover { transform: translateY(-2px); background: rgba(255,215,0,0.15); border-color: #ffd700; }
     @keyframes heroFloat { 0% { transform: translateY(0); } 100% { transform: translateY(28px); } }
     @keyframes heroRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes heroRotateReverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
@@ -348,7 +354,7 @@ function App() {
     @keyframes heroShine { 0% { transform: translateX(-130%); } 100% { transform: translateX(130%); } }
     @media (max-width: 1024px) { .hero-logo { max-width: 520px; max-height: 34vh; } .gold-glow { width: 380px; height: 380px; } .hero-logo-wrap { width: min(88vw, 600px); } }
     @media (max-width: 768px) { .hero-ring.ring-one, .hero-ring.ring-two { animation: none; } .hero-logo-wrap::after { animation: none; } }
-    @media (max-width: 600px) { .hero-section { height: 90vh; } .hero-logo { max-width: 100%; max-height: 26vh; } .hero-logo-wrap { width: 90vw; border-radius: 22px; } .gold-glow { width: 260px; height: 260px; filter: blur(32px); } .gold-glow.top-right { top: -100px; right: -100px; } .gold-glow.bottom-left { bottom: -100px; left: -100px; } .hero-badge { font-size: 11px; padding: 7px 14px; } .hero-subtext { font-size: 13px; max-width: 90%; } .hero-countdown-cell { min-width: 68px; padding: 10px 10px 12px; } .hero-speaker-btn { width: 92%; max-width: 330px; padding: 12px 18px; font-size: 13px; } }
+    @media (max-width: 600px) { .hero-section { height: auto; min-height: 90vh; padding: 42px 0; } .hero-logo { max-width: 100%; max-height: 24vh; } .hero-logo-wrap { width: 90vw; border-radius: 22px; } .gold-glow { width: 260px; height: 260px; filter: blur(32px); } .gold-glow.top-right { top: -100px; right: -100px; } .gold-glow.bottom-left { bottom: -100px; left: -100px; } .hero-badge { font-size: 11px; padding: 7px 14px; } .hero-title { font-size: 28px; max-width: 92%; } .hero-subtext { font-size: 13px; max-width: 90%; } .hero-countdown-cell { min-width: 68px; padding: 10px 10px 12px; } .hero-speaker-btn { width: 92%; max-width: 330px; padding: 12px 18px; font-size: 13px; } .hero-secondary-actions { width: 92%; flex-direction: column; gap: 10px; } .hero-secondary-btn { width: 100%; min-width: 0; box-sizing: border-box; } }
 
     /* MARQUEE */
     .marquee-strip { width: 100%; overflow: hidden; position: relative; padding: 14px 0; background: rgba(0,0,0,0.6); border-top: 1px solid rgba(255,215,0,0.15); border-bottom: 1px solid rgba(255,215,0,0.15); backdrop-filter: blur(10px); }
@@ -593,6 +599,18 @@ function App() {
     @keyframes partnerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     @media (max-width: 768px) { .partners-section { padding: 90px 0; } .partners-header { padding: 0 6%; } .partner-card { min-width: 250px; max-width: 250px; } .partner-meta h3 { font-size: 17px; } .partners-track { gap: 14px; animation-duration: 22s; } }
 
+    /* FAQ SECTION */
+    .faq-section { padding: 120px 8%; background: linear-gradient(180deg, #000 0%, #070707 55%, #000 100%); color: #fff; }
+    .faq-header { max-width: 820px; margin: 0 auto 48px; text-align: center; }
+    .faq-header span { display: inline-block; margin-bottom: 16px; padding: 8px 18px; border-radius: 999px; border: 1px solid rgba(255,215,0,0.35); background: rgba(255,215,0,0.08); color: #ffe58a; font-size: 12px; letter-spacing: 1.4px; text-transform: uppercase; }
+    .faq-header h2 { font-size: clamp(34px, 5vw, 56px); font-weight: 900; line-height: 1.1; background: linear-gradient(90deg, #b8860b, #ffd700, #fff4b0, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .faq-header p { margin-top: 16px; color: #c8c8c8; font-size: 16px; line-height: 1.7; }
+    .faq-grid { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .faq-card { padding: 26px; border-radius: 24px; background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.015)), #060606; border: 1px solid rgba(255,215,0,0.18); box-shadow: 0 18px 48px rgba(0,0,0,0.45); }
+    .faq-card h3 { color: #fff2b0; font-size: 19px; margin-bottom: 12px; line-height: 1.35; }
+    .faq-card p { color: #bdbdbd; font-size: 15px; line-height: 1.7; }
+    @media(max-width:768px){ .faq-section { padding: 90px 5%; } .faq-grid { grid-template-columns: 1fr; } .faq-card { padding: 22px; } }
+
     /* CTA SECTION */
     .cta-section { position: relative; padding: 150px 8%; background: radial-gradient(circle at center, #0a0a0a 0%, #000 75%), linear-gradient(180deg, rgba(255,215,0,0.05), transparent); text-align: center; overflow: hidden; box-shadow: inset 0 0 120px rgba(255,215,0,0.08); }
     .cta-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 70px 70px; opacity: 0.25; pointer-events: none; }
@@ -678,10 +696,11 @@ function App() {
           <div className="hero-logo-wrap">
             <img
               src={HERO_LOGO_URL}
-              alt="Hero Logo"
+              alt="Telugu Creators Summit 2026 official logo"
               className="hero-logo"
             />
           </div>
+          <h1 className="hero-title">Telugu Creators Summit 2026</h1>
           <p className="hero-subtext">Creators. Influence. Growth. One powerful summit.</p>
           <div className="hero-countdown" aria-live="polite">
             <p className="hero-countdown-title">10 May 2026 · 9:00 AM IST</p>
@@ -712,6 +731,24 @@ function App() {
           >
             Register Your Spot Now!
           </a>
+          <div className="hero-secondary-actions">
+            <a
+              href={AWARDEE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-secondary-btn"
+            >
+              Register as Awardee
+            </a>
+            <a
+              href={SPEAKER_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-secondary-btn"
+            >
+              Register as Speaker
+            </a>
+          </div>
         </div>
       </section>
 
@@ -950,7 +987,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/BNS-Srinivas-scaled.png" alt="Speaker" />
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/BNS-Srinivas-scaled.png" alt="BNS Srinivas, founder of Telugu SUPER Humans" loading="lazy" />
             </div>
             <h3>BNS Srinivas</h3>
             <p className="designation">Founder, Telugu SUPER Humans</p>
@@ -959,7 +996,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/images.jpg" alt="Speaker" />
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/images.jpg" alt="Gampa Nageshwar Rao, motivational speaker and founder of Impact International" loading="lazy" />
             </div>
             <h3>Gampa Nageshwar Rao</h3>
             <p className="designation">Founder, Impact International</p>
@@ -968,7 +1005,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/sravya.jpg" alt="Speaker" />
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/sravya.jpg" alt="Dr. Sravya Buggana, senior gynecologist and Instagram creator" loading="lazy" />
             </div>
             <h3>Dr. Sravya Buggana</h3>
             <p className="designation">Senior Gynecologist & Obstetrician</p>
@@ -977,7 +1014,7 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/images-1.jpg" alt="Speaker" />
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/images-1.jpg" alt="PVS Swetha, dubbing artiste and Instagram creator" loading="lazy" />
             </div>
             <h3>PVS Swetha</h3>
             <p className="designation">Dubbing Artiste</p>
@@ -988,11 +1025,39 @@ function App() {
 
           <div className="speaker-card">
             <div className="speaker-img">
-              <img src="https://nikeelugunda.com/wp-content/uploads/2026/05/channels4_profile-1.jpg" alt="Speaker" />
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-1.jpg" alt="Anil Geela from My Village Show" loading="lazy" />
             </div>
             <h3>Anil Geela</h3>
             <p className="designation">My Village Show</p>
             <span className="tag">Actor</span>
+          </div>
+          
+          <div className="speaker-card">
+            <div className="speaker-img">
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-2.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+            </div>
+            <h3>Sailaja</h3>
+            <p className="designation">Sailaws Kitchen</p>
+            <span className="tag">Youtuber</span>
+          </div>
+          
+
+          <div className="speaker-card">
+            <div className="speaker-img">
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/channels4_profile-3.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+            </div>
+            <h3>Deepak</h3>
+            <p className="designation">TechBoyDeepak</p>
+            <span className="tag">Instagram Creator</span>
+          </div>
+
+          <div className="speaker-card">
+            <div className="speaker-img">
+              <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/vamsi.jpg" alt="Sailaja from Sailaws Kitchen" loading="lazy" />
+            </div>
+            <h3>Vamsee Krishna Reddy</h3>
+            <p className="designation">Instagram Creator</p>
+            <span className="tag">Entrepreneur</span>
           </div>
 
 {/*           
@@ -1220,6 +1285,47 @@ function App() {
         </div>
       </section>
 
+      {/* FAQ SECTION */}
+      <section className="faq-section scroll-section" ref={addToSectionRefs} id="faq">
+        <div className="faq-header">
+          <span>Quick Answers</span>
+          <h2>Telugu Creators Summit FAQ</h2>
+          <p>Clear answers for attendees, speakers, award nominees, brands, and Telugu digital creators planning to join the May 2026 edition.</p>
+        </div>
+
+        <div className="faq-grid">
+          <article className="faq-card">
+            <h3>What is Telugu Creators Summit 2026?</h3>
+            <p>Telugu Creators Summit 2026 is a creator economy event for Telugu creators, influencers, brands, and aspiring digital entrepreneurs to learn, network, collaborate, and grow.</p>
+          </article>
+
+          <article className="faq-card">
+            <h3>When is Telugu Creators Summit 2026?</h3>
+            <p>The May edition is scheduled for 10 May 2026 at 9:00 AM IST, with registration, creator sessions, networking, panel discussions, and recognition moments across the day.</p>
+          </article>
+
+          <article className="faq-card">
+            <h3>Who should attend the summit?</h3>
+            <p>Instagram creators, YouTubers, influencers, digital marketers, business owners, brands, and aspiring creators who want to build authority in the Telugu creator ecosystem should attend.</p>
+          </article>
+
+          <article className="faq-card">
+            <h3>What will attendees learn?</h3>
+            <p>Attendees will learn content growth, monetization, personal branding, collaboration strategy, creator business fundamentals, and practical ways to grow faster with community support.</p>
+          </article>
+
+          <article className="faq-card">
+            <h3>How can I register as a speaker or awardee?</h3>
+            <p>Use the speaker and awardee registration buttons on this page. The speaker form collects speaker nominations, and the awardee form collects creator award nominations.</p>
+          </article>
+
+          <article className="faq-card">
+            <h3>What is included with registration?</h3>
+            <p>Registration includes access to creator sessions, networking zones, event experiences, swag, lunch, and confirmation for the limited-seat May edition.</p>
+          </article>
+        </div>
+      </section>
+
       {/* CTA SECTION */}
       <section className="cta-section scroll-section" ref={addToSectionRefs}>
         <div className="cta-grid"></div>
@@ -1247,10 +1353,10 @@ function App() {
               <span>Limited Seats</span>
             </div>
             <div className="cta-nominate-row">
-              <a href="https://forms.gle/MJ7JG4VJeYkf9biR7" target="_blank" rel="noopener noreferrer" className="cta-btn-nominate">
+              <a href={SPEAKER_FORM_URL} target="_blank" rel="noopener noreferrer" className="cta-btn-nominate">
                 Nominate yourself as a Speaker
               </a>
-              <a href="https://forms.gle/c1nyyz9p2uszBZSZ6" target="_blank" rel="noopener noreferrer" className="cta-btn-nominate">
+              <a href={AWARDEE_FORM_URL} target="_blank" rel="noopener noreferrer" className="cta-btn-nominate">
                 Nominate for the Awards
               </a>
             </div>

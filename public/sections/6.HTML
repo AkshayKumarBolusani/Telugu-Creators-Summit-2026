@@ -1,0 +1,203 @@
+<section class="speakers-section">
+
+    <div class="speakers-header">
+      <h2>Featured Speakers</h2>
+      <p>Learn from creators who are already winning in the digital space.</p>
+    </div>
+  
+    <div class="speakers-grid">
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Arjun Kumar</h3>
+        <p class="designation">YouTube Growth Strategist</p>
+        <span class="tag">Content Strategy</span>
+      </div>
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Ravi Teja</h3>
+        <p class="designation">Digital Creator & Educator</p>
+        <span class="tag">YouTube Growth</span>
+      </div>
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Sneha Reddy</h3>
+        <p class="designation">Brand Collaboration Expert</p>
+        <span class="tag">Monetization</span>
+      </div>
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Kiran Kumar</h3>
+        <p class="designation">Influencer Marketing Lead</p>
+        <span class="tag">Brand Deals</span>
+      </div>
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Divya Sharma</h3>
+        <p class="designation">Personal Branding Coach</p>
+        <span class="tag">Branding</span>
+      </div>
+  
+      <div class="speaker-card">
+        <div class="speaker-img">
+          <img src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" alt="Speaker">
+        </div>
+        <h3>Mahesh Yadav</h3>
+        <p class="designation">Reels Growth Expert</p>
+        <span class="tag">Reels Growth</span>
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <style>
+  
+  .speakers-section {
+    padding: 130px 8%;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  /* HEADER */
+  .speakers-header {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  
+  .speakers-header h2 {
+    font-size: clamp(36px,5vw,58px);
+    font-weight: 800;
+    background: linear-gradient(90deg,#FFD700,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .speakers-header p {
+    color: #cfcfcf;
+  }
+  
+  /* GRID */
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* CARD */
+  .speaker-card {
+    background: linear-gradient(145deg, #111, #050505);
+    padding: 34px 28px;
+    border-radius: 22px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: 0.35s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* GOLD LINE */
+  .speaker-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(#FFD700,#D4AF37);
+  }
+  
+  /* HOVER */
+  .speaker-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255,215,0,0.5);
+    box-shadow: 0 0 40px rgba(212,175,55,0.25);
+  }
+  
+  /* IMAGE */
+  .speaker-img {
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(255,215,0,0.4);
+    box-shadow: 0 0 25px rgba(255,215,0,0.15);
+  }
+  
+  .speaker-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* NAME (FIXED VISIBILITY) */
+  .speaker-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  
+  /* DESIGNATION */
+  .designation {
+    color: #c8c8c8;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  
+  /* TAG */
+  .tag {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg,#FFD700,#D4AF37);
+    color: #000;
+    font-weight: 700;
+  }
+  
+  /* FLOAT ANIMATION */
+  .speaker-card {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .speaker-card:nth-child(2n) {
+    animation-delay: 1s;
+  }
+  
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .speakers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media(max-width:600px){
+    .speakers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  </style>

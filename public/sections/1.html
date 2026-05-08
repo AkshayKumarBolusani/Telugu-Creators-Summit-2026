@@ -1,0 +1,107 @@
+<section class="hero-section">
+
+    <!-- Gold corner glows -->
+    <div class="gold-glow top-right"></div>
+    <div class="gold-glow bottom-left"></div>
+  
+    <!-- Center Content -->
+    <div class="hero-content">
+      <img 
+        src="https://telugucreatorssummit.com/wp-content/uploads/2026/05/telugu.png" 
+        alt="Hero Logo"
+        class="hero-logo"
+      />
+    </div>
+  
+  </section>
+  
+  <style>
+  /* HERO WRAPPER */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* GOLD CORNER GLOWS */
+  .gold-glow {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(255,215,0,0.35), transparent 60%);
+    filter: blur(50px);
+    opacity: 0.9;
+    pointer-events: none;
+  }
+  
+  /* TOP RIGHT */
+  .gold-glow.top-right {
+    top: -160px;
+    right: -160px;
+  }
+  
+  /* BOTTOM LEFT */
+  .gold-glow.bottom-left {
+    bottom: -160px;
+    left: -160px;
+  }
+  
+  /* CENTER */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  /* 🔥 LOGO 100% BIGGER (DOUBLED SIZE) */
+  .hero-logo {
+    width: 840px;   /* increased from 420px → 100% bigger */
+    max-width: 90%;
+    height: auto;
+    display: block;
+  }
+  
+  /* TABLET */
+  @media (max-width: 1024px) {
+    .hero-logo {
+      width: 600px;
+    }
+  
+    .gold-glow {
+      width: 380px;
+      height: 380px;
+    }
+  }
+  
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .hero-section {
+      height: 90vh;
+    }
+  
+    .hero-logo {
+      width: 320px;
+    }
+  
+    .gold-glow {
+      width: 260px;
+      height: 260px;
+      filter: blur(40px);
+    }
+  
+    .gold-glow.top-right {
+      top: -100px;
+      right: -100px;
+    }
+  
+    .gold-glow.bottom-left {
+      bottom: -100px;
+      left: -100px;
+    }
+  }
+  </style>

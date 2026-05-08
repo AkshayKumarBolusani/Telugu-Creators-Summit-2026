@@ -1,0 +1,229 @@
+<section class="agenda-section">
+
+    <div class="agenda-header">
+      <h2>Event Agenda</h2>
+      <p>Experience a power-packed day designed for creators.</p>
+    </div>
+  
+    <div class="timeline">
+  
+      <!-- ITEM -->
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="time">10:00 AM</span>
+          <h3>Registration & Networking</h3>
+          <p>Meet fellow creators, connect, and kickstart the experience.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item right">
+        <div class="content">
+          <span class="time">11:00 AM</span>
+          <h3>Opening Keynote</h3>
+          <p>Inspiring session from top creators and industry leaders.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="time">12:30 PM</span>
+          <h3>Creator Sessions</h3>
+          <p>Deep dive into content strategies, growth, and monetization.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item right">
+        <div class="content">
+          <span class="time">1:30 PM</span>
+          <h3>Lunch & Networking</h3>
+          <p>Enjoy lunch while building meaningful creator connections.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="time">2:30 PM</span>
+          <h3>Panel Discussion</h3>
+          <p>Real conversations on growth, branding, and collaborations.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item right">
+        <div class="content">
+          <span class="time">4:00 PM</span>
+          <h3>Collaboration & Open Networking</h3>
+          <p>Find creators, partners, and opportunities to grow together.</p>
+        </div>
+      </div>
+  
+      <div class="timeline-item left">
+        <div class="content">
+          <span class="time">5:00 PM</span>
+          <h3>Closing & Recognition</h3>
+          <p>Celebrating creators and wrapping up an unforgettable experience.</p>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <style>
+  
+  .agenda-section {
+    padding: 130px 8%;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000 70%);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  /* HEADER */
+  .agenda-header {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .agenda-header h2 {
+    font-size: 52px;
+    font-weight: 800;
+  
+    background: linear-gradient(90deg, #D4AF37, #FFD700, #FFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .agenda-header p {
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* TITLE (GOLD GRADIENT) */
+  .content h3 {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+  
+    background: linear-gradient(90deg, #D4AF37, #FFD700, #FFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* CENTER LINE */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(#D4AF37, #FFD700, transparent);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  
+  /* ITEM */
+  .timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  /* LEFT */
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  /* RIGHT */
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  /* DOT */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #FFD700;
+    border: 2px solid #000;
+    box-shadow: 0 0 15px #FFD700;
+    z-index: 1;
+  }
+  
+  /* POSITION DOT */
+  .timeline-item.left::before {
+    right: -8px;
+  }
+  
+  .timeline-item.right::before {
+    left: -8px;
+  }
+  
+  /* CONTENT BOX */
+  .content {
+    padding: 25px;
+    background: linear-gradient(145deg, #111, #050505);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+  }
+  
+  /* HOVER */
+  .content:hover {
+    transform: scale(1.05);
+    border: 1px solid rgba(212,175,55,0.6);
+    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+  }
+  
+  /* TIME */
+  .time {
+    font-size: 14px;
+    color: #FFD700;
+    font-weight: 600;
+  }
+  
+  /* TITLE */
+  .content h3 {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+  
+  /* TEXT */
+  .content p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  /* RESPONSIVE */
+  @media(max-width:768px){
+  
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 20px;
+    }
+  
+    .timeline-item.right {
+      left: 0%;
+    }
+  
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+      left: 10px;
+    }
+  }
+  
+  </style>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Telugu Creators Summit</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* SECTION */
+.about-section {
+    padding: 120px 8%;
+    background: radial-gradient(circle at top, #111 0%, #000 60%);
+    position: relative;
+}
+
+/* GLOW BG */
+.about-section::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212,175,55,0.15), transparent 70%);
+    top: -100px;
+    left: -100px;
+    filter: blur(80px);
+    animation: floatGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+    from { transform: translateY(0px); }
+    to { transform: translateY(40px); }
+}
+
+/* HEADING */
+.about-title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg, #D4AF37, #FFD700, #FFF5CC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* SUBTEXT */
+.about-subtitle {
+    text-align: center;
+    color: #bbb;
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 80px;
+    font-size: 18px;
+
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* GRID */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.about-card {
+    background: linear-gradient(145deg, #0f0f0f, #070707);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 35px;
+    border-radius: 18px;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+/* 🔥 LEFT GLOW BORDER */
+.about-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 4px;
+    height: 60%;
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #D4AF37, #FFD700, #FFF5CC);
+    box-shadow: 0 0 15px rgba(212,175,55,0.7);
+
+    opacity: 0.4;
+    transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.about-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border: 1px solid rgba(212,175,55,0.6);
+    box-shadow: 0 0 50px rgba(212,175,55,0.25);
+}
+
+/* GLOW BOOST ON HOVER */
+.about-card:hover::before {
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    box-shadow: 0 0 25px rgba(212,175,55,1);
+}
+
+/* ICON */
+.about-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* SVG */
+.about-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: url(#goldGradient);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover svg {
+    transform: scale(1.15) rotate(3deg);
+}
+
+/* TITLE */
+.about-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.15);
+}
+
+.about-card:hover h3 {
+    text-shadow: 0 0 12px rgba(212,175,55,0.6);
+}
+
+/* TEXT */
+.about-card p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* HIGHLIGHT */
+.highlight-box {
+    text-align: center;
+    margin-top: 90px;
+
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.highlight-box h2 {
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #D4AF37, #FFD700, #FFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.highlight-box p {
+    margin-top: 15px;
+    color: #bbb;
+}
+
+/* SHOW ANIMATION */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: all 0.8s ease;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .about-section {
+        padding: 80px 6%;
+    }
+
+    .about-title {
+        font-size: 34px;
+    }
+
+    .about-subtitle {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+
+    .highlight-box h2 {
+        font-size: 26px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SVG GRADIENT -->
+<svg width="0" height="0">
+<defs>
+<linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#D4AF37"/>
+<stop offset="50%" stop-color="#FFD700"/>
+<stop offset="100%" stop-color="#FFF5CC"/>
+</linearGradient>
+</defs>
+</svg>
+
+<section class="about-section">
+
+<h2 class="about-title">About The Event</h2>
+
+<p class="about-subtitle">
+Telugu Creators Summit 2026 is a premium gathering of digital creators, influencers, 
+and storytellers from Telugu states — designed to connect, collaborate, and scale 
+in the new creator economy.
+</p>
+
+<div class="about-grid">
+
+<div class="about-card">
+<div class="about-icon">
+<svg viewBox="0 0 24 24">
+<path d="M17 10.5V7a5 5 0 0 0-10 0v3.5A2.5 2.5 0 0 0 4.5 13v5A2 2 0 0 0 6.5 20h11a2 2 0 0 0 2-2v-5a2.5 2.5 0 0 0-2.5-2.5ZM9 7a3 3 0 0 1 6 0v3H9Z"/>
+</svg>
+</div>
+<h3>Creator Ecosystem</h3>
+<p>Meet reel creators, YouTubers, influencers, and storytellers under one powerful platform.</p>
+</div>
+
+<div class="about-card">
+<div class="about-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2a5 5 0 0 0-5 5c0 3.25 5 9 5 9s5-5.75 5-9a5 5 0 0 0-5-5Zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/>
+</svg>
+</div>
+<h3>Power Networking</h3>
+<p>Build real connections with creators, brands, and collaborators who can scale your journey.</p>
+</div>
+
+<div class="about-card">
+<div class="about-icon">
+<svg viewBox="0 0 24 24">
+<path d="M13 2L3 14h7v8l10-12h-7z"/>
+</svg>
+</div>
+<h3>Growth Strategies</h3>
+<p>Learn content growth, monetization, and brand building directly from industry leaders.</p>
+</div>
+
+<div class="about-card">
+<div class="about-icon">
+<svg viewBox="0 0 24 24">
+<path d="M4 4h16v12H5.17L4 17.17V4Zm2 2v6h12V6H6Zm0 8h8v2H6v-2Z"/>
+</svg>
+</div>
+<h3>Live Experience</h3>
+<p>Experience high-energy sessions, creator meetups, and real-time collaboration opportunities.</p>
+</div>
+
+</div>
+
+<div class="highlight-box">
+<h2>300 Creators • One Stage • Unlimited Impact</h2>
+<p>Be part of the most powerful Telugu creator gathering of 2026.</p>
+</div>
+
+</section>
+
+<script>
+
+// SCROLL ANIMATION
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if(entry.isIntersecting){
+            setTimeout(() => {
+                entry.target.classList.add("show");
+            }, index * 120);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(
+    ".about-title, .about-subtitle, .about-card, .highlight-box"
+).forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>
